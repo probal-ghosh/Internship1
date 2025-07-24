@@ -13,6 +13,7 @@ import RoomsSection from './Component/RoomSection/RoomSection';
 import Services from './Component/Services/Services';
 import Stats from './Component/Stats/Stats';
 import Gallery from './Component/Gallery/Gallery';
+import Contact from './Component/Contact/Contact';
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
       <Services/>
       <Stats/>
       <Gallery/>
+      <Contact/>
     </div>
   )
 }
