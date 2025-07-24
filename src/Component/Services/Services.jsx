@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaShieldAlt, FaSyncAlt, FaUtensils, FaMapMarkedAlt } from 'react-icons/fa';
-import servicesImage from '../../assets/palash.webp'; // replace with correct path
+import { FaShieldAlt, FaUtensils, FaMapMarkedAlt } from 'react-icons/fa';
+import {Ri24HoursLine } from 'react-icons/ri';
+import servicesImage from '../../assets/palash.webp';
 
 const Services = () => {
   return (
@@ -35,7 +36,7 @@ const Services = () => {
 
           <li className="flex items-center space-x-4">
             <div className="bg-indigo-100 p-3 rounded-full">
-              <FaSyncAlt className="text-indigo-500 text-xl" />
+              <Ri24HoursLine  className="text-indigo-500 text-xl" />
             </div>
             <span className="text-lg font-medium text-gray-700">24 Hours Room Service</span>
           </li>
