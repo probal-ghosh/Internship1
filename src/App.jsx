@@ -8,6 +8,7 @@ import Hero from './Component/Hero/Hero'
 import About from './Component/About/About'
 import RoomsSection from './Component/RoomSection/RoomSection';
 import Services from './Component/Services/Services';
+import Stats from './Component/Stats/Stats';
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
       <About/>
       <RoomsSection/>
       <Services/>
+      <Stats/>
     </div>
   )
 }
