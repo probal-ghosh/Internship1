@@ -9,6 +9,7 @@ import About from './Component/About/About'
 import RoomsSection from './Component/RoomSection/RoomSection';
 import Services from './Component/Services/Services';
 import Stats from './Component/Stats/Stats';
+import Gallery from './Component/Gallery/Gallery';
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <RoomsSection/>
       <Services/>
       <Stats/>
+      <Gallery/>
     </div>
   )
 }
