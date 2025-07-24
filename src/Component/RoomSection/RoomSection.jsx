@@ -1,7 +1,6 @@
 import React from 'react';
 import room1 from '../../assets/room1.jpg';
 import room2 from '../../assets/small.jpg';
-import { Heart, ShieldCheck, Droplets } from 'lucide-react';
 
 const RoomCard = ({ image, title, description, price }) => (
   <div
@@ -11,23 +10,12 @@ const RoomCard = ({ image, title, description, price }) => (
   >
     <img src={image} alt={title} className="w-full h-56 object-cover" />
     <div className="px-5 py-4">
-      <div className="flex justify-end -mt-8 mb-2 space-x-2">
-        <span className="bg-white p-2 rounded-full shadow hover:bg-pink-100 transition">
-          <Heart className="text-pink-500 w-5 h-5" />
-        </span>
-        <span className="bg-white p-2 rounded-full shadow hover:bg-violet-100 transition">
-          <Droplets className="text-violet-500 w-5 h-5" />
-        </span>
-        <span className="bg-white p-2 rounded-full shadow hover:bg-blue-100 transition">
-          <ShieldCheck className="text-blue-500 w-5 h-5" />
-        </span>
-      </div>
       <h3 className="text-lg font-semibold">{title}</h3>
       <p className="text-gray-500 text-sm mt-1">{description}</p>
       <p className="mt-2 text-gray-700 text-sm">
         Starting from <span className="font-semibold">Rs. {price}/night</span>
       </p>
-      <button className="mt-4 w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700 transition">
+      <button className="mt-4 w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
         BOOK NOW
       </button>
     </div>
@@ -38,7 +26,7 @@ const RoomsSection = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-16 bg-white">
       <div className="text-center mb-12" data-aos="fade-up">
-        <p className="uppercase tracking-wider text-sm text-gray-600 relative inline-block after:block after:w-10 after:h-0.5 after:bg-pink-500 after:mt-1 after:mx-auto">
+        <p className="uppercase tracking-wider text-sm text-gray-600 relative inline-block after:block after:w-10 after:h-0.5 after:bg-indigo-500 after:mt-1 after:mx-auto">
           Our Living Room
         </p>
         <h2 className="text-3xl md:text-4xl font-bold mt-2">
@@ -50,7 +38,7 @@ const RoomsSection = () => {
         <RoomCard
           image={room1}
           title="Cozy Haven Room"
-          description="Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation."
+          description="Escape to comfort in our Cozy Haven Room, a snug retreat thoughtfully designed for intimate relaxation. Whether you're seeking a peaceful night's sleep or a quiet moment away from the bustle."
           price="1000"
         />
         <RoomCard
