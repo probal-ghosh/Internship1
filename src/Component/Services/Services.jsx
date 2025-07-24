@@ -16,7 +16,7 @@ const Services = () => {
 
       {/* Right Content */}
       <div className="w-full md:w-1/2 mt-10 md:mt-0 md:pl-12">
-        <p className="text-pink-600 tracking-wide uppercase font-semibold mb-2">Services</p>
+        <p className="text-indigo-600 tracking-wide uppercase font-semibold mb-2">Services</p>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-snug">
           Strive Only For The Best.
         </h2>
@@ -34,8 +34,8 @@ const Services = () => {
           </li>
 
           <li className="flex items-center space-x-4">
-            <div className="bg-pink-100 p-3 rounded-full">
-              <FaSyncAlt className="text-pink-500 text-xl" />
+            <div className="bg-indigo-100 p-3 rounded-full">
+              <FaSyncAlt className="text-indigo-500 text-xl" />
             </div>
             <span className="text-lg font-medium text-gray-700">24 Hours Room Service</span>
           </li>
