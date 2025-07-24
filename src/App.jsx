@@ -7,6 +7,7 @@ import Navbar from './Component/Navbar/Navbar'
 import Hero from './Component/Hero/Hero'
 import About from './Component/About/About'
 import RoomsSection from './Component/RoomSection/RoomSection';
+import Services from './Component/Services/Services';
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
       <Hero />
       <About/>
       <RoomsSection/>
+      <Services/>
     </div>
   )
 }
