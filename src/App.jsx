@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import Navbar from './Component/Navbar/Navbar'
 import Hero from './Component/Hero/Hero'
 import About from './Component/About/About'
+import RoomsSection from './Component/RoomSection/RoomSection';
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
       <Navbar />
       <Hero />
       <About/>
+      <RoomsSection/>
     </div>
   )
 }
