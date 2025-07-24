@@ -41,7 +41,7 @@ const Contact = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="bg-[#ed2c7f] text-white p-10 flex flex-col justify-between"
+          className="bg-indigo-700 text-white p-10 flex flex-col justify-between"
         >
           <div>
             <h2 className="text-2xl font-bold mb-6">Contact Info</h2>
@@ -83,7 +83,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="p-10"
         >
-          <h2 className="text-2xl font-semibold text-[#ed2c7f] mb-8">Send a Message</h2>
+          <h2 className="text-2xl font-semibold text-indigo-700 mb-8">Send a Message</h2>
           <form onSubmit={onSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input type="text" name="firstName" placeholder="First Name" required className="w-full border-b border-gray-400 py-2 focus:outline-none" />
@@ -98,7 +98,7 @@ const Contact = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 type="submit"
-                className="bg-[#ed2c7f] text-white font-semibold px-8 py-2 rounded-full shadow-md hover:bg-[#d11f6b] transition"
+                className="bg-indigo-700 text-white font-semibold px-8 py-2 rounded-full shadow-md hover:bg-indigo-800 transition"
               >
                 Send
               </motion.button>

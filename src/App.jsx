@@ -32,6 +32,7 @@ function App() {
       <Stats/>
       <Gallery/>
       <Contact/>
+      {/* <Map/> */}
     </div>
   )
 }
