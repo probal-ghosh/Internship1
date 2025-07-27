@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaPhoneAlt, FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
@@ -35,7 +35,6 @@ const Contact = () => {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto bg-white rounded-[30px] shadow-[0_15px_40px_rgba(0,0,0,0.1)] grid md:grid-cols-2 overflow-hidden"
       >
-        {/* Left Side */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -60,8 +59,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
-          {/* Social Icons */}
           <div className="flex gap-6 text-white text-xl mt-10">
             {[FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn].map((Icon, index) => (
               <motion.div
@@ -74,8 +71,6 @@ const Contact = () => {
             ))}
           </div>
         </motion.div>
-
-        {/* Right Side Form */}
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

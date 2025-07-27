@@ -3,7 +3,6 @@ import React from 'react';
 const Footer = () => (
   <footer className="bg-black text-gray-200 py-12 px-4">
     <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-      {/* Brand & CTA */}
       <div>
         <div className="text-white font-semibold text-lg mb-2 leading-tight">
           Kingsukh<br />Guest<br />House
@@ -14,7 +13,7 @@ const Footer = () => (
         <button className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-7 rounded transition duration-200">BOOK NOW</button>
       </div>
 
-      {/* Quick Links */}
+
       <div>
         <div className="font-semibold text-white text-base mb-2">QUICK LINKS</div>
         <ul className="space-y-1 text-gray-400 text-sm">
@@ -26,7 +25,7 @@ const Footer = () => (
         </ul>
       </div>
 
-      {/* Our Services */}
+
       <div>
         <div className="font-semibold text-white text-base mb-2">OUR SERVICES</div>
         <ul className="space-y-1 text-gray-400 text-sm">
@@ -37,7 +36,6 @@ const Footer = () => (
         </ul>
       </div>
 
-      {/* Contact Us */}
       <div>
         <div className="font-semibold text-white text-base mb-2">CONTACT US</div>
         <p className="text-gray-400 text-sm mb-2">

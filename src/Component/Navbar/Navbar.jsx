@@ -22,13 +22,11 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center text-white">
-        {/* Logo */}
         <div className="cursor-pointer">
           <h1 className="text-xl font-semibold text-indigo-400">Kingsukh</h1>
           <p className="text-sm -mt-1">Guest House</p>
         </div>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 font-medium">
           {menuItems.map((item) => (
             <li key={item}>
@@ -36,7 +34,7 @@ const Navbar = () => {
                 to={item}
                 smooth={true}
                 duration={500}
-                offset={-70} // adjust for sticky navbar height
+                offset={-70}
                 className="cursor-pointer hover:text-indigo-400"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -45,14 +43,12 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Book Button */}
         <div className="hidden md:block">
           <button className="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded">
             BOOK NOW
           </button>
         </div>
 
-        {/* Hamburger */}
         <div className="md:hidden z-50">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor">
@@ -65,7 +61,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <div
           className={`absolute top-full left-0 w-full bg-white text-black transition-all duration-300 md:hidden shadow-lg ${
             menuOpen ? "max-h-screen py-6" : "max-h-0 overflow-hidden"

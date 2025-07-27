@@ -1,12 +1,11 @@
 import React from 'react';
-import guesthouseImg from '../../assets/out.jpg'; // Replace with your image path
+import guesthouseImg from '../../assets/out.jpg';
 
 const About = () => {
   return (
     <section className="bg-white py-20 px-4">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 bg-gradient-to-br from-white via-gray-50 to-white p-10 rounded-3xl shadow-xl border border-gray-200">
 
-        {/* Image Section */}
         <div
           className="w-full lg:w-1/2"
           data-aos="fade-right"
@@ -18,7 +17,6 @@ const About = () => {
           />
         </div>
 
-        {/* Text Section */}
         <div
           className="w-full lg:w-1/2"
           data-aos="fade-left"

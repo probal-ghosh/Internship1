@@ -6,7 +6,6 @@ import servicesImage from '../../assets/palash.webp';
 const Services = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12 bg-white">
-      {/* Left Image */}
       <div className="w-full md:w-1/2">
         <img
           src={servicesImage}
@@ -15,7 +14,6 @@ const Services = () => {
         />
       </div>
 
-      {/* Right Content */}
       <div className="w-full md:w-1/2 mt-10 md:mt-0 md:pl-12">
         <p className="text-indigo-600 tracking-wide uppercase font-semibold mb-2">Services</p>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-snug">

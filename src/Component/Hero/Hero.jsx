@@ -7,10 +7,10 @@ const Hero = () => {
       className="relative bg-cover bg-center h-[500px] sm:h-[600px] md:h-[700px] flex justify-center items-center px-4"
       style={{ backgroundImage: `url(${hero})` }}
     >
-      {/* Overlay */}
+
       <div className="absolute inset-0 bg-black/30"></div>
 
-      {/* Hero Text */}
+
       <div
         className="relative z-10 text-center text-white space-y-4"
         data-aos="fade-down"
@@ -23,8 +23,6 @@ const Hero = () => {
           In Our <span className="text-indigo-300">Guest House</span>.
         </p>
       </div>
-
-      {/* Floating Button */}
       <div
         className="absolute left-1/2 bottom-[-40px] transform -translate-x-1/2 w-[90%] max-w-3xl z-20 px-4"
         data-aos="zoom-in"
