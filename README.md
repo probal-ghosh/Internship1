@@ -45,3 +45,7 @@ Designed as part of an internship, this project demonstrates smooth scrolling na
    cd Internship1
    npm install
    npm run dev
+
+## Live Preveiw
+
+<video controls src="Screen Recording 2025-07-27 152702.mp4" title="Title"></video>
