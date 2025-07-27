@@ -21,3 +21,15 @@ Designed as part of an internship, this project demonstrates smooth scrolling na
 
 ## 📂 Folder Structure
 
+Internship1/
+├── public/
+│ ├── index.html
+│ └── ...
+├── src/
+│ ├── assets/ # All images and static files
+│ ├── components/ # Navbar, Hero, About, Gallery, Footer, etc.
+│ ├── App.jsx
+│ ├── index.jsx
+│ └── styles.css
+├── package.json
+└── README.md
