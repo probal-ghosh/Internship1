@@ -22,3 +22,24 @@ Designed as part of an internship, this project demonstrates smooth scrolling na
 ## 📂 Folder Structure
 
 ![alt text](image.png)
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **React.js**
+- **Tailwind CSS**
+- **React Slick (carousel)**
+- **AOS (scroll animations)**
+- **Vite or CRA (React setup)**
+- **Optional: Socket.IO**
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/probal-ghosh/Internship1.git
+   cd Internship1
