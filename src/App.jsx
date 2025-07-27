@@ -15,6 +15,7 @@ import Stats from './Component/Stats/Stats';
 import Gallery from './Component/Gallery/Gallery';
 import Contact from './Component/Contact/Contact';
 import MapEmbed from './Component/Map/Map';
+import Footer from './Component/Footer/Footer';
 
 function App() {
   useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
       <Gallery/>
       <Contact/>
       <MapEmbed/>
+      <Footer/>
     </div>
   )
 }
