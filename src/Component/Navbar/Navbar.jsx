@@ -1,61 +1,65 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleLinkClick = () => setMenuOpen(false);
+
+  const menuItems = ["home", "about", "services", "rooms", "gallery", "contact"];
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 bg-transparent">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center text-white relative">
-        
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-black/80 backdrop-blur-lg shadow-md" : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center text-white">
         {/* Logo */}
-        <div>
-          <h1 className="text-xl font-semibold text-indigo-700">Kingsukh</h1>
+        <div className="cursor-pointer">
+          <h1 className="text-xl font-semibold text-indigo-400">Kingsukh</h1>
           <p className="text-sm -mt-1">Guest House</p>
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 font-medium">
-          {['Home', 'About', 'Services', 'Rooms', 'Gallery', 'Contact'].map((item) => (
-            <li key={item} className="hover:text-indigo-400 cursor-pointer transition duration-200">
-              {item}
+          {menuItems.map((item) => (
+            <li key={item}>
+              <Link
+                to={item}
+                smooth={true}
+                duration={500}
+                offset={-70} // adjust for sticky navbar height
+                className="cursor-pointer hover:text-indigo-400"
+              >
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </Link>
             </li>
           ))}
         </ul>
 
-        {/* Book Now Button (Desktop only) */}
+        {/* Book Button */}
         <div className="hidden md:block">
-          <button className="bg-indigo-700 hover:bg-indigo-800 text-white px-4 py-2 rounded transition duration-200">
+          <button className="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded">
             BOOK NOW
           </button>
         </div>
 
-        {/* Hamburger Icon */}
+        {/* Hamburger */}
         <div className="md:hidden z-50">
-          <button
-            className="focus:outline-none"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <svg
-              className="w-6 h-6 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <button onClick={() => setMenuOpen(!menuOpen)}>
+            <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor">
               {menuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
           </button>
@@ -63,20 +67,29 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden absolute top-full left-0 w-full bg-white text-gray-800 transition-all duration-300 shadow-lg ${
-            menuOpen ? 'max-h-screen py-6' : 'max-h-0 overflow-hidden'
+          className={`absolute top-full left-0 w-full bg-white text-black transition-all duration-300 md:hidden shadow-lg ${
+            menuOpen ? "max-h-screen py-6" : "max-h-0 overflow-hidden"
           }`}
         >
           <ul className="flex flex-col items-center gap-4 font-medium">
-            {['Home', 'About', 'Services', 'Rooms', 'Gallery', 'Contact'].map((item) => (
-              <li
-                key={item}
-                className="hover:text-indigo-600 transition duration-200"
-              >
-                {item}
+            {menuItems.map((item) => (
+              <li key={item}>
+                <Link
+                  to={item}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  onClick={handleLinkClick}
+                  className="cursor-pointer hover:text-indigo-600"
+                >
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                </Link>
               </li>
             ))}
-            <button className="bg-indigo-700 hover:bg-indigo-800 text-white px-4 py-2 rounded transition duration-200">
+            <button
+              className="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded text-white"
+              onClick={handleLinkClick}
+            >
               BOOK NOW
             </button>
           </ul>
