@@ -43,3 +43,5 @@ Designed as part of an internship, this project demonstrates smooth scrolling na
    ```bash
    git clone https://github.com/probal-ghosh/Internship1.git
    cd Internship1
+   npm install
+   npm run dev
