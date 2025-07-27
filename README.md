@@ -46,6 +46,7 @@ Designed as part of an internship, this project demonstrates smooth scrolling na
    npm install
    npm run dev
 
-## Live Preveiw
+## Live Link
+https://internship1-cyan.vercel.app/
 
 [Download and watch the demo](src/assets/Demo.mp4)
