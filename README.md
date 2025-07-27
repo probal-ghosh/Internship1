@@ -48,4 +48,4 @@ Designed as part of an internship, this project demonstrates smooth scrolling na
 
 ## Live Preveiw
 
-<video controls src="Screen Recording 2025-07-27 152702.mp4" title="Title"></video>
+[Download and watch the demo](src/assets/Demo.mp4)
