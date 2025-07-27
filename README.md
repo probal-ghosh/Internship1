@@ -1,12 +1,23 @@
-# React + Vite
+# Internship1 – Kingsukh Guest House Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive website project built using React, Tailwind CSS, and supporting libraries.  
+Designed as part of an internship, this project demonstrates smooth scrolling navigation, animated sections, carousels, and integration with external APIs (e.g., Google Maps).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Responsive **Navbar** with hamburger menu (mobile)
+- **Smooth Scroll** navigation
+- **Hero, About, Rooms, Services, Stats, Gallery, Contact** sections
+- **React Slick** carousel for image gallery
+- **Google Maps Embed**
+- **Sticky Footer**
+- **AOS animations** for scroll effects
+- Built with **React + Tailwind CSS**
+- Backend-ready structure (optional Socket.IO support)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Folder Structure
+
