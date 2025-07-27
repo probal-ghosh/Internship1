@@ -14,6 +14,7 @@ import Services from './Component/Services/Services';
 import Stats from './Component/Stats/Stats';
 import Gallery from './Component/Gallery/Gallery';
 import Contact from './Component/Contact/Contact';
+import MapEmbed from './Component/Map/Map';
 
 function App() {
   useEffect(() => {
@@ -32,7 +33,7 @@ function App() {
       <Stats/>
       <Gallery/>
       <Contact/>
-      {/* <Map/> */}
+      <MapEmbed/>
     </div>
   )
 }
