@@ -23,7 +23,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center text-white">
         <div className="cursor-pointer">
-          <h1 className="text-xl font-semibold text-indigo-400">Kingsukh</h1>
+          <h1 className="text-xl font-bold text-indigo-700">Kingsukh</h1>
           <p className="text-sm -mt-1">Guest House</p>
         </div>
 
